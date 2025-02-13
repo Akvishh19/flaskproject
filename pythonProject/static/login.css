@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", serif;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    position: fixed;
+    height: 20vh;
+    width: 100%;
+    z-index: 102;
+    padding: 10 20px;
+}
+.nav {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+.nav,
+.nav_items {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_logo,
+.nav_link,
+.btn {
+    color: #fff;
+}
+.nav_logo {
+    font-size: 25px;
+}
+.nav_items {
+    column-gap: 25px;
+}
+.nav_link:hover {
+    color: aliceblue;
+}
+.btn {
+    padding: 6px;
+    border: 2px solid #fff;
+    background: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.btn:active {
+    transform: scale(0.90);
+}
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    margin-top: -4vh;
+    background-image: url(https://img.freepik.com/free-photo/gift-wrapped-dark-paper-dark-background_1220-4600.jpg?size=626&ext=jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.form_container {
+    position: absolute;
+    max-width: 350px;
+    width: 100%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+.form_close {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: #93725d;
+    font-size: 22px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.form_container h2 {
+    font-size: 22px;
+    color: #93725d;
+    text-align: center;
+}
+.input_box {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+}
+.input_box input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    color: #93725d;
+    border-bottom: 2px solid #aaaa;
+    outline: none;
+    padding: 0 30px;
+    transition: all 0.2s ease;
+}
+.input_box input:focus {
+    border-color: #93725d;
+}
+.input_box i {
+    position: absolute;
+    top: 14%;
+    left: 1px;
+    color: grey;
+    font-size: 20px;
+}
+.input_box input:focus ~ i.email,
+.input_box input:focus ~ i.password {
+    color: #93725d;
+}
+.input_box i.pw_hide {
+    left: 288px;
+    color: #93725d;
+    font-size: 18px;
+}
+.option_field {
+    margin: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form_container a {
+    color: #93725d;
+    font-size: 12px;
+}
+.checkbox {
+    display: flex;
+    column-gap: 8px;
+    white-space: nowrap;
+    font-size: 12px;
+}
+.checkbox input {
+    accent-color: #93725d;
+}
+.checkbox label {
+    font-size: 12px;
+    user-select: none;
+    cursor: pointer;
+    color: #93725d;
+}
+.form_container .button {
+    background-color: #93725d;
+    margin-top: 40px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+.login_signup {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Social Login Button Styles */
+.social-login {
+    text-align: center;
+    margin-top: 20px;
+}
+.social-login p {
+    font-size: 14px;
+    color: #93725d;
+    margin-bottom: 10px;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+.social-icons .google {
+    color: #db4437;
+    border: 2px solid #db4437;
+}
+.social-icons .facebook {
+    color: #1877f2;
+    border: 2px solid #1877f2;
+}
+.social-icons .github {
+    color: #333;
+    border: 2px solid #333;
+}
+.social-icons .twitter {
+    color: #1da1f2;
+    border: 2px solid #1da1f2;
+}
+.social-icons a:hover {
+    background: #93725d;
+    color: #fff;
+}

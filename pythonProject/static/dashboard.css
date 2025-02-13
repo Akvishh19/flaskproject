@@ -1,0 +1,92 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+/* Full-page background */
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://wallpapers.com/images/file/christmas-gifts-pictures-o4gqhrictxtdym3o.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar styles */
+.navbar {
+    width: 100%;
+    padding: 10px 100px;
+    background-color: rgba(0, 0, 0, 0.8) !important; /* Slight transparency */
+}
+
+.navbar-brand {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: lightgray !important;
+}
+
+/* Centered container */
+.custom-container {
+    background: rgba(255, 255, 255, 0.9); /* Light transparent background */
+    padding: 20px;
+   max-width: 600px;
+   width: 200%;
+    border-radius: 12px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: auto; /* Centers vertically and horizontally */
+    margin-top: 150px;
+
+
+}
+
+/* Title */
+.form_title {
+    color: #590a59;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* User info */
+.custom-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.custom-container ul li {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Button */
+.btn-dark {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 6px;
+    background-color: #590a59;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-dark:hover {
+    background-color: #450958;
+}

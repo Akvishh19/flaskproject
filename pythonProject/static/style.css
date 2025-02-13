@@ -1,0 +1,151 @@
+/* Full Page Background */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+
+    /* Background Image */
+    background-image: url('https://img.freepik.com/premium-photo/black-gift-boxes-with-red-ribbon-black-background_373887-970.jpg');
+    background-size: cover; /* Covers the entire page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repetition */
+}
+
+/* Centered Signup Form */
+.container {
+    border: 0.5px solid black;
+    font-size: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Light transparent white */
+    width: 100%;
+    max-width: 500px;
+    height: 70vh;
+    padding: 4px 50px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+
+    /* Centering the container */
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+/* Form Title */
+.form_title {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    color: #eb2230;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Form Inputs */
+.user,
+.user_info {
+    padding: 10px 0;
+}
+
+label {
+    padding: 0 10px;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #eb2230;
+    color: #eb2230;
+}
+
+input:hover {
+    border-color: #eb2230;
+}
+
+/* Submit Button */
+button {
+    background-color: #eb2230;
+    color: white;
+    margin: 10px auto;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+/* Centering Flash Messages */
+.alert {
+    text-align: center;
+}
+
+/* Login Link */
+.login_link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Social Signup Icons */
+.text-center p {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.d-flex {
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.d-flex a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-danger:hover {
+    background-color: #eb2230;
+    color: white;
+}
+
+.btn-outline-primary:hover {
+    background-color: #1877f2;
+    color: white;
+}
+
+.btn-outline-dark:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn-outline-info:hover {
+    background-color: #1da1f2;
+    color: white;
+}
